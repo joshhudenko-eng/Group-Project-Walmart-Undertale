@@ -3,14 +3,19 @@
 // NAME IS IN FILE THEN USE CTRL + SHIFT + F TO SEARCH FOR IT IN VS CODE!
 let heartX = 500;
 let heartY = 500;
+let underblaster;
 const heartSpeed = 3;
 
-function setup() {
+async function setup() {
   createCanvas(windowWidth, windowHeight);
+  underblaster = await loadImage('/assets/underblaster.png');
+
+
 }
 
 function draw() {
   background("black");
   drawHeart();
+  drawBoss1();
 }
 
