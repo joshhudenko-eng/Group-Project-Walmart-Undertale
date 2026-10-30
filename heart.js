@@ -1,16 +1,3 @@
-let heartX = 200;
-let heartY = 200;
-const heartSpeed = 3;
-
-function setup() {
-  createCanvas(400, 400);
-}
-
-function draw() {
-  background("#000000");
-  drawHeart();
-}
-
 function drawHeart() {
   rectMode(CENTER);
   fill("#ff1f1f");
